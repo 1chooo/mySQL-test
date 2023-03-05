@@ -11,9 +11,9 @@ from mysql.connector import Error
 
 config = {
     'host': 'localhost',
-    'database': 'sportTest',
+    'database': 'database_name',
     'user': 'root',
-    'password': '29202726',
+    'password': 'pwd',
 }
 
 # 建立資料庫連線

@@ -5,9 +5,9 @@ try:
     # 連接 MySQL/MariaDB 資料庫
     connection = mysql.connector.connect(
         host='localhost',          # 主機名稱
-        database='sportTest', # 資料庫名稱
+        database='database_name', # 資料庫名稱
         user='root',        # 帳號
-        password='29202726' # 密碼
+        password='pwd' # 密碼
     )
 
     if connection.is_connected():
