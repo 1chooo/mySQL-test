@@ -1,6 +1,6 @@
 import json
 
-with open("data.txt", "r") as file:
+with open("data/test.txt", "r") as file:
     content = file.read().splitlines()
 
 result = []

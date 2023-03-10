@@ -1,6 +1,6 @@
 import json
 
-file_path = './garmin_push_log.txt'
+file_path = './data/garmin_push_log.txt'
 input_file = open(file_path, 'r')
 
 content = []

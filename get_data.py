@@ -27,7 +27,7 @@ query = ("SELECT data from garmin_push_log;")
 cursor.execute(query)
 
 # 將資料匯出成 txt 檔案
-with open('output.txt', 'w') as f:
+with open('./data/output.txt', 'w') as f:
     for (data,) in cursor:
         f.write(data + '\n')
 

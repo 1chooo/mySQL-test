@@ -4,7 +4,7 @@ import json
 import matplotlib.pyplot as plt
 
 # read the data we export to the output.txt
-data_path = './output.txt'
+data_path = './data/output.txt'
 with open(data_path, "r") as input_file:
     content = input_file.read().splitlines()
 
@@ -103,8 +103,8 @@ for i, phase in enumerate(phases):
     y = i + 1
 
     for period in result[number].get(phase.lower(), []):
-        start = period['startTimeInSeconds'] - start_time
-        end = period['endTimeInSeconds'] - start_time
+        start = period['startTimeInSeconds']
+        end = period['endTimeInSeconds']
         duration = end - start
         ax.barh(y, duration, left=start, height=0.5, align='center', alpha=0.7, label=phase)
 

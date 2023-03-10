@@ -1,5 +1,5 @@
 import json
-jsonFile = open('./garmin_push_log.json')
+jsonFile = open('./data/garmin_push_log.json')
 a = json.load(jsonFile)
 data_0 = a[2]
 realdata = data_0['data']
